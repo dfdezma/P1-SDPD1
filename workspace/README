@@ -1,0 +1,15 @@
+Once you're using  node manager bash :
+    1: Inside workspace directory you must have:
+        - "install-mrjob.sh"
+        - "AFINN-1111.txt"
+        - "Tweets_6MB.json"
+        - "Tweets_314MB.json"
+        - "MRStateHappiness.py"
+        - "happiest.py"
+
+    2: Once you have all the necessary scripts and documents these are the steps to follow in order to get the results:
+        - cd workspace
+        - ./install-mrjob.sh 
+        - bash-4.2$ python MRStateHappiness.py -r inline Tweets_314MB.json -c mrjob.conf --output-dir results
+
+
